@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Resume Generator</h1>
+      <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <main>
+      <form id="resume-form">
+        <section>
+          <h2>Personal Information</h2>
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="tel" id="phone" placeholder="Phone Number" />
+          <input
+            type="text"
+            id="linkedin-preview"
+            placeholder="LinkedIn Preview (e.g., linkedin.com/in/your-name)"
+          />
+          <input type="url" id="linkedin-url" placeholder="LinkedIn Full URL" />
+          <input
+            type="text"
+            id="github-preview"
+            placeholder="GitHub Preview (e.g., github.com/your-username)"
+          />
+          <input type="url" id="github-url" placeholder="GitHub Full URL" />
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <div id="education-container">
+            <div class="education-entry">
+              <input type="text" placeholder="Institution Name" required />
+              <input type="text" placeholder="Degree" required />
+              <input type="text" placeholder="Graduation Date" required />
+              <input type="text" placeholder="GPA" />
+            </div>
+          </div>
+          <button type="button" id="add-education">Add Education</button>
+        </section>
+
+        <section>
+          <h2>Technical Proficiencies</h2>
+          <textarea
+            id="skills"
+            rows="4"
+            placeholder="List your technical skills..."
+            required
+          ></textarea>
+        </section>
+
+        <section>
+          <h2>Projects</h2>
+          <div id="projects-container">
+            <div class="project-entry">
+              <input type="text" placeholder="Project Name" required />
+              <input type="text" placeholder="Technologies Used" required />
+              <textarea
+                placeholder="Project Description"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button type="button" id="add-project">Add Project</button>
+        </section>
+
+        <section>
+          <h2>Achievements</h2>
+          <textarea
+            id="achievements"
+            rows="4"
+            placeholder="List your achievements..."
+          ></textarea>
+        </section>
+
+        <button type="submit">Generate Resume</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

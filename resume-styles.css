@@ -1,0 +1,89 @@
+body {
+  font-family: "Charter", Arial, sans-serif;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+
+#resume-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
+
+body.dark-theme h2 {
+  border-bottom-color: #e0e0e0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.education-entry,
+.project-entry {
+  margin-bottom: 15px;
+}
+
+.education-entry h3,
+.project-entry h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#print-resume,
+#theme-toggle {
+  display: inline-block;
+  margin: 20px 10px 20px 0;
+  padding: 10px 20px;
+  background-color: #295f98;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#print-resume:hover,
+#theme-toggle:hover {
+  background-color: #1e4674;
+}
+
+body.dark-theme #print-resume,
+body.dark-theme #theme-toggle {
+  background-color: #4a90e2;
+}
+
+body.dark-theme #print-resume:hover,
+body.dark-theme #theme-toggle:hover {
+  background-color: #3a7bc8;
+}
+
+@media print {
+  #print-resume,
+  #theme-toggle {
+    display: none;
+  }
+}
